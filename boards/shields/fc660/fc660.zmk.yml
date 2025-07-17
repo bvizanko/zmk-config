@@ -1,0 +1,10 @@
+file_format: "1"
+id: fc660
+name: fc660
+type: shield
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+
