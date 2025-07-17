@@ -5,16 +5,10 @@
 		zmk,battery = &vbatt;
 		zephyr,display = &oled;
 		zmk,kscan = &kscan0;
-		zmk,physical-layout = &physical_layout0;
+		zmk,matrix_transform = &matrix_transform_fc660;
 	};
 
-	physical_layout0: physical_layout_0 {
-		compatible = "zmk,physical-layout";
-		display-name = "default layout";
-		transform = <&matrix_transform_fc660>;
-	};
-
-	matrix_transform_fc660: matrix_transform {
+	matrix_transform_fc660: matrix_transform_0 {
 		compatible = "zmk,matrix-transform";
 		columns = <8>;
 		rows = <10>;
