@@ -2,16 +2,9 @@
 
 / {
 	chosen {
-		zmk,battery = &vbatt;
-		zmk,physical-layout = &physical_layout0;
+		zmk,batter = &vbatt;
+		zmk,matrix_transform = &matrix_transform_fc660;
 		zmk,kscan = &kscan0;
-	};
-
-	physical_layout0: physical_layout_0 {
-		compatibale = "zmk,physical-layout";
-		display-name = "Defaul Layout";
-		kscan = <&kscan0>;
-		transform = <&matrix_transform_fc660>;
 	};
 
 	matrix_transform_fc660: keymap_transform_0 {
@@ -56,7 +49,7 @@
 			, <&gpio1 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
-	
+
 	vbatt: vbatt {
 		compatible = "zmk,battery-nrf-vddh";
 		label = "BATTERY";
