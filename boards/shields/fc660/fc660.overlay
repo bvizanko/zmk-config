@@ -56,12 +56,6 @@
 			, <&gpio1 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
-	ext-power {
-		compatible = "zmk,ext-power-generic";
-		label = "EXT_POWER";
-		control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
-		init-delay-ms = <50>;
-	};
 	
 	vbatt: vbatt {
 		compatible = "zmk,battery-nrf-vddh";
