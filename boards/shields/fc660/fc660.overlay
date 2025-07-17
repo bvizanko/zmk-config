@@ -3,7 +3,6 @@
 / {
 	chosen {
 		zmk,physical-layout = &physical_layout0;
-		zephyr,display = &oled;
 		zmk,kscan = &kscan0;
 	};
 
@@ -57,11 +56,3 @@
 			;
 	};
 };
-
-&nice_i2c {
-	oled: ssd1306@3c {
-		width = <128>;
-		height = <32>;
-		
-	}
-}
