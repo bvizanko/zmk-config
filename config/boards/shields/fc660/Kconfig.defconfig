@@ -1,0 +1,8 @@
+
+if SHIELD_FC660
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "fc660"
+
+endif
