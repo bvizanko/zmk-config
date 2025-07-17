@@ -1,3 +1,4 @@
+name: zmk-keyboard-fc660
 build:
   settings:
     board_root: .
