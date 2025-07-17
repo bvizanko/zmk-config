@@ -3,15 +3,8 @@
 / {
 	chosen {
 		zmk,batter = &vbatt;
-		zmk,physical-layout = &physical_layout0;
+		zmk,matrix_transform = &matrix_transform_fc660;
 		zmk,kscan = &kscan0;
-	};
-
-	physical_layout0: physical_layout_0 {
-		compatible = "zmk,physical-layout";
-		display-name = "Default Layout";
-		kscan = <&kscan0>;
-		transform = <&matrix_transform_fc660>;
 	};
 
 	matrix_transform_fc660: keymap_transform_0 {
